@@ -168,7 +168,7 @@ header{position:relative;top:auto;left:auto;transform:none;width:auto;margin:8px
 @media (max-width:560px){.svc-tech{grid-template-columns:1fr}}
 @media (max-width:760px){
 .herobg .hero{gap:18px;padding-top:32px;padding-bottom:78px}
-.herobg .hero .heroimg{width:auto;max-width:86%;max-height:40svh;margin:0 auto}
+.herobg .hero .heroimg{width:auto;max-width:89%;max-height:41svh;margin:0 auto}
 .herobg .hero h1{font-size:clamp(28px,8.6vw,36px)}
 .herobg .hero p{font-size:15px;line-height:1.5;margin:14px 0 22px}
 .herobg .hero .btn{padding:12px 22px;font-size:15px}
@@ -179,6 +179,7 @@ header{position:relative;top:auto;left:auto;transform:none;width:auto;margin:8px
 }
 #dp .dpa .wa-btn{background:#fff}
 @media (max-width:760px){#dp .dpa a{min-width:0;padding-left:4px;padding-right:4px;font-size:clamp(12.5px,3.8vw,14.5px)}}
+@media (max-width:760px){#dp #dpwyg{padding-top:46px}}
 @media (prefers-reduced-motion:reduce){.intro{animation:none;opacity:1;transform:none}.hero h1 .w{animation:none;opacity:1;transform:none}.wv{animation:none}.dots,.ring,.glyph{animation:none}}
 @media (prefers-reduced-motion:reduce){.drawer,.scrim{transition:none}.canvas div{animation:none}html{scroll-behavior:auto}}
 @media (max-width:1000px){
@@ -542,7 +543,7 @@ s.setProperty('--ga',al(a,.09));s.setProperty('--b1',al(a,.3));s.setProperty('--
 [].forEach.call(th.querySelectorAll('.gl'),function(n,i){n.textContent=X[2][i]||''});
 var ac=ens(a),ds=dp.style;ds.setProperty('--ac',ac);ds.setProperty('--acl',mx(ac,.78));ds.setProperty('--acs',al(ac,.2));ds.setProperty('--acx',dk(ac,.55))}
 function sec(t,b){return '<h2>'+t+'</h2>'+b}
-function fitTheme(){var w=document.getElementById('dpwyg'),t=document.getElementById('dptheme');if(!w||!t)return;var g=w.querySelector('.dpg');if(!g)return;var h=Math.round(g.getBoundingClientRect().bottom-dp.getBoundingClientRect().top+dp.scrollTop+100);if(window.innerWidth<=760){var c=dp.querySelector('.dpch'),r0=dp.getBoundingClientRect().top;if(c)h=Math.round(c.getBoundingClientRect().bottom-r0+dp.scrollTop+36);h=Math.min(h,dp.clientHeight)}t.style.height=h+'px'}
+function fitTheme(){var w=document.getElementById('dpwyg'),t=document.getElementById('dptheme');if(!w||!t)return;var g=w.querySelector('.dpg');if(!g)return;var h=Math.round(g.getBoundingClientRect().bottom-dp.getBoundingClientRect().top+dp.scrollTop+100);if(window.innerWidth<=760){var c=dp.querySelector('.dpch'),r0=dp.getBoundingClientRect().top;if(c)h=Math.round(c.getBoundingClientRect().bottom-r0+dp.scrollTop+68);h=Math.min(h,dp.clientHeight)}t.style.height=h+'px'}
 window.addEventListener('resize',fitTheme);
 function show(c,sw){var t=c.querySelector('b').textContent.trim(),sub=(c.querySelector('small')||{}).textContent||'',pn=c.closest('.svc-panel'),tab=document.querySelector('.svc-tab[aria-controls="'+pn.id+'"] span'),cat=tab?tab.textContent:'Service',web=/Website|E-Commerce/.test(cat);
 var d=D[t]||['Tailored '+t+' solutions for your business.','Planning around your goals|Clean, reliable build|Testing on real devices|Support after launch'];
